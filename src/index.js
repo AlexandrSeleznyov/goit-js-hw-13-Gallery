@@ -30,6 +30,7 @@ function formSubmit(e){
     const searchQuery = form.elements.query.value;
     API.query = searchQuery;
    
+  if (searchQuery.trim() != ""){
     API.fetchImage(API.query,page)
     .then( data => {
         dateState = [...data.hits];
@@ -53,7 +54,7 @@ function formSubmit(e){
     .finally(()=> form.reset());
        
 }
-
+}
 function loadMoreImage(e){
     
   
