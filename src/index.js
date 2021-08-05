@@ -3,6 +3,7 @@ import Notiflix from "notiflix";
 import card from "./partials/card.hbs";
 import API from "./api-service";
 import SimpleLightbox from "simplelightbox";
+import axios from "axios";
 
 const lightbox = new SimpleLightbox('.gallery a');
 lightbox.on('show.simplelightbox', function (e) {
@@ -82,5 +83,7 @@ function loadMoreImage(e){
         galleryList.innerHTML = card(result);
             
     }
+
+    
 
     

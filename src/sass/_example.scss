@@ -1,19 +1,20 @@
 .search-form {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   margin: 40px;
 }
 
 .search-form input {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   border-color: #333333;
   margin-right: 0;
+  max-width: 400px;
 }
 
 .wrapper {
-  width: 350px;
+  width: 550px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -21,21 +22,17 @@
 .search-form button,
 .wrapper > button {
   padding: 12px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   border: none;
   cursor: pointer;
   color: #fff;
-  background-color: #6c757d;
+  background-color: #16080f;
   border-color: #6c757d;
   margin-top: 10px;
 }
 
-.search-form button:hover,
-.wrapper > button:hover {
-  background-color: #5c636a;
-  border-color: #565e64;
-}
+
 
 .wrapper > button {
   display: block;
@@ -57,8 +54,8 @@
 }
 
 .gallery-image {
-  width: 330px;
-  height: 370px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   margin-bottom: 15px;
 }
